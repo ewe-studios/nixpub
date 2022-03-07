@@ -6,7 +6,9 @@
     }
 }:
 
-with pkgs;
+let
+    config = pkgs.config;
+in
 
 {
     # do something here
