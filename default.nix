@@ -1,9 +1,8 @@
-self: super:
-
-with super;
+{
+    pkgs ? import <nixospkgs> {}
+}:
 
 {
-    k0s = super.callPackages ./modules/k0s {
-
-    };
+    # do something here
+    k0s = pkgs.callPackages ./modules/k0s {};
 }
