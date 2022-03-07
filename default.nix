@@ -1,5 +1,5 @@
 {
-    pkgs ? import <nixospkgs> {
+    pkgs ? import <nixpkgs> {
         overlays = [
             (import "./overlays.nix")
         ];

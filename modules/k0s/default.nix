@@ -1,5 +1,5 @@
 {
-	pkgs ? import <nixospkg> {}
+	pkgs ? import <nixpkgs> {}
 }:
 
 pkgs.stdenv.mkDerivation rec {
