@@ -8,5 +8,5 @@
 
 {
     # do something here
-    k0s = super.callPackages ./modules/k0s {};
+    k0s = pkgs.callPackages ./modules/k0s {};
 }
