@@ -1,9 +1,13 @@
-self: super:
+{
+    pkgs ? import <nixospkg> {
+        overlays = [
+            (import "./overlays.nix")
+        ];
+    }
+}:
 
-with super;
+with pkgs;
 
 {
-    k0s = super.callPackages ./modules/kos {
-
-    };
+    # do something here
 }
