@@ -4,5 +4,5 @@
 
 {
     # do something here
-    k0s = pkgs.callPackages ./modules/k0s {};
+    k0s = pkgs.callPackage ./modules/k0s {};
 }
